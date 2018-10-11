@@ -4,6 +4,10 @@ var WORKOUT_ELEM = document.getElementById("workout");
 
 var RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 var SUITS = ["S", "H", "D", "C"];
+function IsLow(idx) {
+  return idx < 6 ? 1 : 0;
+  asdf;
+}
 
 var WORKOUTS = {
   S: ["tricep dips", "pushups"],
@@ -41,7 +45,7 @@ function GetDeck() {
 }
 
 function WorkoutHtml(card) {
-  return WORKOUTS[SUITS[card.suit]][card.rank < 6 ? 1 : 0];
+  return WORKOUTS[SUITS[card.suit]][IsLow(card.rank)];
 }
 
 function CardHtml(card) {
@@ -77,3 +81,4 @@ document.getElementById("reset").addEventListener("click", function() {
   CARD_ELEM.innerHTML = "";
   WORKOUT_ELEM.innerHTML = "";
 });
+
