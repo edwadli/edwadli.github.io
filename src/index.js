@@ -4,9 +4,14 @@ var WORKOUT_ELEM = document.getElementById("workout");
 
 var RANKS = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"];
 var SUITS = ["S", "H", "D", "C"];
+var IMAGES = {
+  "S": "<img src='spade.png'/>",
+  "H": "<img src='heart.png'/>",
+  "D": "<img src='diamond.png'/>",
+  "C": "<img src='clover.png'/>"
+}
 function IsLow(idx) {
   return idx < 6 ? 1 : 0;
-  asdf;
 }
 
 var WORKOUTS = {
@@ -50,7 +55,7 @@ function WorkoutHtml(card) {
 
 function CardHtml(card) {
   var rank_elem = RANKS[card.rank];
-  var suit_elem = SUITS[card.suit];
+  var suit_elem = IMAGES[SUITS[card.suit]];
   return "<strong>" + rank_elem + " " + suit_elem + "</strong>";
 }
 

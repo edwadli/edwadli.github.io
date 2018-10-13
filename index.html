@@ -1,51 +1,55 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
 	<title>Workout Cards</title>
 	<meta charset="UTF-8" />
     <style>
         * {
             text-align: center;
             font-size: 1.5em;
-        }
-        button {
-            background-color: #7c030f;
-            color: white;
-            border-radius: 10px;
-            padding: 25px;
-            border: none;
-            margin: 25px 0 25px 0;
+            font-family: "K2D", sans-serif;
         }
         #draw {
-            padding: 1em;
-            font-size: 1.8em;
-            margin-bottom:.5em;
-            background-color: #9bcc3b;
-            width: 100%
+            background-color: white;
+            height:80%;
         }
         #deck {
             font-size: .8em;
             color: #7c030f;
         }
         #workout {
-            font-size: 2em;
+            font-size: 1em;
+        }
+        #card {
+            padding-top: 40%;
+            font-size: 2.5em;
+        }
+        #info {
+            width: 80%;
+            margin: auto;
+        }
+        #reset {
+            height: 20%;
         }
     </style>
 </head>
 
 <body>
-	<div id="options">
-		<button id="reset"> Reset</button>
-        <br>
-		<button id="draw"> Draw </button>
-	</div>
-	<div id="table">
-		<div id="deck"></div>
-		<div id="card"></div>
-	</div>
-	<div id="info">
-		<div id="workout"></div>
-	</div>
+    <div id="draw">
+	
+    		
+    	<div id="card"></div>
+    	<div id="info">
+    		<div id="workout"></div>
+    	</div>
+        
+    
+    </div>
+    <div id="deck"></div>
+
+    <hr>
+    <div id="reset">shuffle</div>
 
 </body>
 	<script src="src/index.js"></script>
