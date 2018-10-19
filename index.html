@@ -1,56 +1,38 @@
 <html>
 
 <head>
+    <link rel="shortcut icon"href="favicon.ico" />
     <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">
 	<title>Workout Cards</title>
 	<meta charset="UTF-8" />
-    <style>
-        * {
-            text-align: center;
-            font-size: 1.5em;
-            font-family: "K2D", sans-serif;
-        }
-        #draw {
-            background-color: white;
-            height:80%;
-        }
-        #deck {
-            font-size: .8em;
-            color: #7c030f;
-        }
-        #workout {
-            font-size: 1em;
-        }
-        #card {
-            padding-top: 40%;
-            font-size: 2.5em;
-        }
-        #info {
-            width: 80%;
-            margin: auto;
-        }
-        #reset {
-            height: 20%;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
-    <div id="draw">
-	
-    		
-    	<div id="card"></div>
-    	<div id="info">
-    		<div id="workout"></div>
-    	</div>
-        
-    
+    <div class="all">
+        <div id="draw">
+        	<div id="card">
+                <div id="start">
+                    <img src='heart.png'/>
+                    <img src='spade.png'/>
+                    <img src='diamond.png'/>
+                    <img src='clover.png'/>
+                </div>
+            </div>
+        	<div id="info">
+        		<div id="workout">begin card workout</div>
+        	</div>
+        </div>
+        <div id="deck"></div>
+        <hr>
+        <table>
+            <tr>
+                <th id="remap"><a href="remap.html">remap</a></th>
+                <th><img id="logo" src="logo.png"/></th>
+                <th id="reset">shuffle</th>
+            </tr>
+        </table>
     </div>
-    <div id="deck"></div>
-
-    <hr>
-    <div id="reset">shuffle</div>
-
 </body>
 	<script src="src/index.js"></script>
 </html>

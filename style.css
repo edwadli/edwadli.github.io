@@ -1,0 +1,98 @@
+.all {
+    text-align: center;
+    font-family: "K2D", sans-serif;
+}
+hr {
+    width:80%;
+}
+#draw {
+    background-color: white;
+    height:85%;
+}
+#deck {
+    font-size: 3em;
+    color: #7c030f;
+}
+#workout {
+    font-size: 4em;
+}
+#card {
+    padding-top: 40%;
+    font-size: 13em;
+}
+#info {
+    width: 80%;
+    margin: auto;
+}
+#reset {
+    font-size: 3em;
+}
+#start {
+    padding-bottom: .1em;
+}
+#logo {
+    height: 1em;
+    padding-left: .2em;
+    padding-right: .2em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+th {
+    text-align: center;
+    font-size: 3em;
+    margin: auto;
+}
+table {
+    text-align: center;
+    margin: auto;
+}
+
+/*remap page*/
+
+.top {
+    height: 82%;
+}
+
+.mapping {
+    text-align: left;
+    margin: 3em;
+}
+
+.mapping img {
+    text-align: left;
+    margin: 3em;
+}
+
+input {
+    font-size: 3em;
+    border-width: 7px;
+    width: 70%;
+    margin: .1em;
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.column2 {
+    float: left;
+    width: 75%;
+}
+
+.input-wrapper {
+    margin: 6em;
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-top: 2em;
+    font-style: italic;
+}
+
+
+
+
+

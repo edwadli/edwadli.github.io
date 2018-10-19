@@ -83,7 +83,7 @@ document.getElementById("reset").addEventListener("click", function() {
   position = 0;
   Shuffle(deck);
   UpdateDeckElem();
-  CARD_ELEM.innerHTML = "";
-  WORKOUT_ELEM.innerHTML = "";
+  CARD_ELEM.innerHTML = "<div id='start'><img src='heart.png'/><img src='spade.png'/><img src='diamond.png'/><img src='clover.png'/></div>";
+  WORKOUT_ELEM.innerHTML = "click here";
 });
 
